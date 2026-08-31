@@ -7,12 +7,12 @@ Assets referenced below live beside this file (mods/yeet-reborn/assets/).
 
 | Field | Value | Status |
 |---|---|---|
-| Status | Released | ready |
+| Status | Published | LIVE |
 | Category | Game Mod (Code Mod - modinfo type is `Code`) | ready |
 | Tags | Utility, Fun, Meme, Humor | ready |
 | Name | YeetReborn | ready |
 | URL Alias | yeetreborn | ready |
-| Summary (<=100 chars) | see below (90 chars) | ready |
+| Summary (<=100 chars) | see below (100 chars - at the limit) | LIVE |
 | Side | Universal | ready |
 
 Side: the mod registers a client hotkey and a server packet handler, so it is
@@ -25,12 +25,15 @@ remembers that mod.
 
 ## Summary (100 char limit)
 
-Press Y to yeet your selected hotbar item over the horizon! Ctrl+Y throws the whole stack.
+Press a key (default: Y) to toss your selected item over the horizon! Ctrl+Y throws the whole stack.
 
 ## Description (rich text body)
 
-Written - see moddb-description.md in this folder. Credits JapanHasRice for the
-original Yeet mod and states plainly that this is a from-scratch rewrite for 1.22.
+Published. moddb-description.md records the live text.
+
+WARNING: the ModDB "Text" field is TinyMCE rich text, NOT markdown. Pasting
+markdown publishes literal asterisks and brackets. Apply bold/italic/links
+with the editor toolbar.
 
 ## Links
 
