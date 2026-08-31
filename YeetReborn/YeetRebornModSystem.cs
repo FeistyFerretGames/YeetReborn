@@ -23,8 +23,8 @@ public class YeetRebornModSystem : ModSystem
     {
         base.StartClientSide(api);
 
-        api.Input.RegisterHotKey("yeetitem", "Yeet held item", GlKeys.U, HotkeyType.CharacterControls);
-        api.Input.RegisterHotKey("yeetstack", "Yeet held stack", GlKeys.U, HotkeyType.CharacterControls, ctrlPressed: true);
+        api.Input.RegisterHotKey("yeetitem", "Yeet held item", GlKeys.Y, HotkeyType.CharacterControls);
+        api.Input.RegisterHotKey("yeetstack", "Yeet held stack", GlKeys.Y, HotkeyType.CharacterControls, ctrlPressed: true);
 
         var channel = api.Network.RegisterChannel("yeetreborn").RegisterMessageType<YeetPacket>();
 

@@ -25,7 +25,7 @@ remembers that mod.
 
 ## Summary (100 char limit)
 
-Press U to yeet your selected hotbar item over the horizon! Ctrl+U throws the whole stack.
+Press Y to yeet your selected hotbar item over the horizon! Ctrl+Y throws the whole stack.
 
 ## Description (rich text body)
 
