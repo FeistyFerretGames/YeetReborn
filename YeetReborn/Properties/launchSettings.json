@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "Client": {
+      "commandName": "Executable",
+      "executablePath": "pwsh",
+      "commandLineArgs": "-NoProfile -Command \"$proj = $PWD.Path; Set-Location $env:VINTAGE_STORY; dotnet Vintagestory.dll --tracelog --addModPath \\\"$proj\\bin\\Debug\\Mods\\\" -o \\\"creative dev\\\"\""
+    },
+    "Server": {
+      "commandName": "Executable",
+      "executablePath": "pwsh",
+      "commandLineArgs": "-NoProfile -Command \"$proj = $PWD.Path; Set-Location $env:VINTAGE_STORY; dotnet VintagestoryServer.dll --tracelog --addModPath \\\"$proj\\bin\\Debug\\Mods\\\"\""
+    }
+  }
+}

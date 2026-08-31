@@ -1,0 +1,14 @@
+{
+    "$schema": "https://moddbcdn.vintagestory.at/schema/modinfo.latest.json",
+    "type": "Code",
+    "modid": "yeetreborn",
+    "name": "YeetReborn",
+    "authors": [
+        "Maestro"
+    ],
+    "description": "Press U to yeet the focused hotbar item several hundred meters away in a straight line. Ctrl+U yeets the whole stack.",
+    "version": "1.0.1",
+    "dependencies": {
+        "game": "1.22.6"
+    }
+}

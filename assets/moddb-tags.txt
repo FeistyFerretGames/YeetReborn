@@ -1,0 +1,212 @@
+# ModDB valid tags (209) - https://mods.vintagestory.at/api/tags
+# fetched 2026-08-31
+
+Accessibility
+Addon
+Age of Seraphs
+AI
+Airship
+Alcohol
+Ancient Tools
+Animals
+Armor
+attr
+Audio
+Automation
+Behavior
+Bell
+Biodiversity
+Boat
+Bonk
+Bonus
+Bosses
+Brony
+Building
+Camera
+Cave Gen
+CCTV
+Chat
+Cheat
+Chisel
+Chutes
+Claims
+Classes
+Client
+Clientside
+Clothing
+Cloud
+Code
+Collect
+Collectables
+Combat
+Compatibility
+Compilation
+Confession
+Construction
+Cosmetics
+Crafting
+Creatures
+Dead
+Decoration
+Difficulty
+Donions
+Dragons
+Drink
+Dwarf
+Economy
+Elf
+Ergonomic
+Exploration
+Fantasy
+Farming
+Fashion
+Fealism
+Feverstone
+Firepit
+Fix
+Flight
+Flora
+Foliage
+Food
+Foraging
+Fruit Trees
+Fuel
+Fun
+Furniture
+Furry
+Gameplay
+Genelib
+Genetics
+Glass
+Goat
+Graphics
+Grass
+Halloween Modjam 2025
+Hardcore
+Harmony Patching
+Head Tracking
+Horror
+Horses
+Hotfix
+HUD
+Humor
+Immersion
+Immersive
+Imposter
+Jaunt
+Korean
+Language
+Leaves
+Level
+Library
+Location
+Loot
+Lore
+Lottery
+Loud
+Magic
+Manager
+Map
+Mapping
+Mares
+Mechanic
+mechanics
+Medieval
+Meme
+Metal
+Mining
+Mob drops
+Mob-Spawns
+Modpack
+Mount
+Mounts
+Music
+Neutral
+Non-Working in 1.22
+NPC
+NPCs
+Nutrients
+Nutrition
+Ocean
+Optimization
+Orchestra
+Orchestral
+Ore Gen
+Ore Generation
+Oregen
+Oreshape
+Other
+Oven
+Over Powered
+Overhaul
+Panning
+Passive Income
+Patch
+Pay
+Pegasus
+Pets
+Pine
+Playermodel
+QoL
+Race
+Ranged
+Realism
+Rename
+Resin
+Roleplay
+Salty
+Sci-Fi
+Scrapping
+Sea
+Search
+Server-Specific
+Shaders
+Shields
+Simplicity
+Simplification
+Smithing
+Sound
+Soundtrack
+Space
+Spanish
+Spooky
+Statistics
+Storage
+Story
+Strange
+Structures
+Survival
+Symphony
+Tack
+Taming
+Technology
+Teleport
+Terrain
+Texture Pack
+Time
+Tools
+Tracking
+Traders
+Trading Cards
+Translation
+Transportation
+Travel & Exploration
+Tweak
+UI
+Underground
+Underwater
+Unicorns
+User Experience
+User interface
+Utility
+Vehicle
+Veneer
+Villagers
+Visual
+Voice
+Weapons
+Woodworking
+Worldgen
+xskills
+Yield
+Youtube
