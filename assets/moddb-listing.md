@@ -38,8 +38,8 @@ original Yeet mod and states plainly that this is a from-scratch rewrite for 1.2
 |---|---|
 | Homepage / Forum Post | none yet |
 | Trailer Video | none |
-| Source Code | none - no public repo (no git remote configured) |
-| Issue tracker | none |
+| Source Code | https://github.com/FeistyFerretGames/YeetReborn |
+| Issue tracker | https://github.com/FeistyFerretGames/YeetReborn/issues |
 | Wiki | none |
 | Donate | none |
 
@@ -66,8 +66,8 @@ Both logos are cropped from the same in-game screenshot of a puff ring.
 
 ## Outstanding
 
-- [ ] 2-3 more gameplay screenshots for the slideshow
+- [x] screenshots: screenshot01/02.png (1920x1080) - accepted as-is
 - [x] pick a summary
 - [x] write the description body
 - [x] pick category + tags
-- [ ] decide whether to publish source (no repo exists yet)
+- [x] source published: github.com/FeistyFerretGames/YeetReborn (public, MIT)
