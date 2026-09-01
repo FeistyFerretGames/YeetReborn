@@ -7,15 +7,24 @@ using Vintagestory.API.Server;
 namespace YeetReborn;
 
 /// <summary>
-/// Spawns puffy shockwave-ring particles around a yeeted EntityItem as it flies.
-/// Deliberately does NOT touch the entity's position or motion.
-/// /// </summary>
+/// Spawns puffy shockwave-ring particles around a yeeted EntityItem as it flies, and ends the
+/// flight when the item lands, stops, or leaves loaded chunk space.
+/// <para>
+/// Deliberately does NOT touch the entity's position or motion - the trajectory is the game's
+/// own physics. The one exception is despawning an item that has flown out of loaded chunks,
+/// which would otherwise sit unsimulated until something else cleaned it up.
+/// </para>
+/// </summary>
 public class EntityBehaviorYeetFlight : EntityBehavior
 {
     const int RingParticleCount = 12;
     const int MinRingIntervalMs = 300;
     const int MaxRingIntervalMs = 700;
     const float OutwardSpeedFactor = 2.0f; // relative to the item's own current speed
+
+    /// <summary>Motion below which the item counts as having stopped flying.</summary>
+    const double MinFlightMotion = 0.05;
+
 
     static readonly Random rand = new();
 
@@ -40,7 +49,29 @@ public class EntityBehaviorYeetFlight : EntityBehavior
     {
         if (!active) return;
 
-        if (!entity.Alive || entity.Collided)
+        if (!entity.Alive)
+        {
+            active = false;
+            return;
+        }
+
+        // Flown out of loaded chunk space. Destroy it rather than leave an unsimulated item
+        // sitting in a chunk nobody is looking at.
+        if (sapi.World.BlockAccessor.GetChunkAtBlockPos(entity.Pos.AsBlockPos) == null)
+        {
+            active = false;
+            entity.Die(EnumDespawnReason.OutOfRange);
+            return;
+        }
+
+        // The flight is over once the item hits something, hits water, or has slowed to a crawl.
+        // Water matters on its own: Collided stays false while an item bobs in a liquid, so
+        // testing collision alone left this behavior spawning rings for as long as the item
+        // floated - the "foam" of particles on every yeet that landed in water.
+        if (entity.Collided
+            || entity.FeetInLiquid
+            || entity.Swimming
+            || entity.Pos.Motion.Length() < MinFlightMotion)
         {
             active = false;
             return;

@@ -16,6 +16,17 @@
       <HintPath>$(VINTAGE_STORY)/Lib/protobuf-net.dll</HintPath>
       <Private>false</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(VINTAGE_STORY)/Lib/Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- Optional dependency: compiled against, never shipped. Every use is guarded behind
+         ModLoader.IsModEnabled("configlib") in a NoInlining method, so the CLR never has to
+         resolve this assembly for players who do not have ConfigLib installed. -->
+    <Reference Include="configlib">
+      <HintPath>../lib/configlib.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
   </ItemGroup>
 
 <ItemGroup>

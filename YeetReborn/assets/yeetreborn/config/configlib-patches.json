@@ -1,0 +1,150 @@
+{
+  "version": 2,
+  "patches": {},
+  "settings": {
+    "boolean": {
+      "SOUND_WHOOSH": {
+        "name": "sound-whoosh",
+        "weight": 1.1,
+        "clientSide": true,
+        "comment": "The vanilla throw sound. Tick more than one sound to have a random one picked on each yeet.",
+        "default": true
+      },
+      "SOUND_QUACK": {
+        "name": "sound-quack",
+        "weight": 1.2,
+        "clientSide": true,
+        "default": false
+      },
+      "SOUND_YEET": {
+        "name": "sound-yeet",
+        "weight": 1.3,
+        "clientSide": true,
+        "default": false
+      },
+      "SOUND_WILHELM": {
+        "name": "sound-wilhelm",
+        "weight": 1.4,
+        "clientSide": true,
+        "default": false
+      },
+      "SOUND_AZTEC": {
+        "name": "sound-aztec",
+        "weight": 1.5,
+        "clientSide": true,
+        "default": false
+      },
+      "SOUND_GLASS": {
+        "name": "sound-glass",
+        "weight": 1.6,
+        "clientSide": true,
+        "default": false
+      },
+      "RANDOMIZE_PITCH": {
+        "name": "randomize-pitch",
+        "weight": 2.2,
+        "clientSide": true,
+        "comment": "Vary the pitch of the yeet sound by up to 25% either way on each throw. Obvious on clips you recognise.",
+        "default": false
+      },
+      "SERVER_PLAY_GRUNT": {
+        "name": "server-play-grunt",
+        "weight": 3.3,
+        "comment": "Play the player's exertion grunt alongside the yeet sound. Server-wide.",
+        "default": true
+      },
+      "SOUND_CHICKEN": {
+        "name": "sound-chicken",
+        "weight": 1.7,
+        "clientSide": true,
+        "comment": "A chicken. Picks one of three chicken recordings at random on each yeet.",
+        "default": false
+      },
+      "LOCK_ANGLE": {
+        "name": "lock-45-degree-throws",
+        "weight": 2.16,
+        "clientSide": true,
+        "comment": "Throw at a fixed 45 degree arc. Turn off to throw wherever you are looking.",
+        "default": true
+      }
+    },
+    "integer": {
+      "VOLUME": {
+        "name": "volume",
+        "weight": 2.1,
+        "clientSide": true,
+        "comment": "Yeet sound volume as a percentage. The server can cap this below 100.",
+        "default": 100,
+        "range": {
+          "min": 0,
+          "max": 100,
+          "step": 1
+        }
+      }
+    },
+    "float": {
+      "SERVER_SOUND_RANGE": {
+        "name": "server-sound-range",
+        "weight": 3.1,
+        "comment": "Blocks within which a yeet sound can be heard. Server-wide.",
+        "default": 15,
+        "range": {
+          "min": 1,
+          "max": 64,
+          "step": 1
+        }
+      },
+      "SERVER_VOLUME_CEILING": {
+        "name": "server-volume-ceiling",
+        "weight": 3.2,
+        "comment": "Ceiling on yeet sound volume, 0-1. Each player's own percentage scales against this, so lowering it turns everyone down without touching their setting.",
+        "default": 1.0,
+        "range": {
+          "min": 0,
+          "max": 1,
+          "step": 0.05
+        }
+      },
+      "STRENGTH": {
+        "name": "strength",
+        "weight": 2.15,
+        "clientSide": true,
+        "comment": "How far your yeets go, as a percentage of the maximum distance. 50 is the original throw distance; 25 is half of that.",
+        "default": 50,
+        "range": {
+          "min": 25,
+          "max": 100,
+          "step": 1
+        }
+      },
+      "SERVER_MAX_STRENGTH": {
+        "name": "server-max-strength",
+        "weight": 3.4,
+        "comment": "Ceiling on yeet strength for every player, as a percentage of maximum distance. Server-wide.",
+        "default": 100,
+        "range": {
+          "min": 25,
+          "max": 100,
+          "step": 1
+        }
+      }
+    }
+  },
+  "formatting": [
+    {
+      "type": "separator",
+      "title": "Sounds",
+      "weight": 1.0
+    },
+    {
+      "type": "separator",
+      "title": "Playback",
+      "weight": 2.0
+    },
+    {
+      "type": "separator",
+      "title": "Yeet! Server Settings",
+      "weight": 3.0
+    }
+  ]
+}
