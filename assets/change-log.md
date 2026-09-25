@@ -5,19 +5,16 @@
 
 ## Version 1.1
 
-### Client side changes
-
-  + Added six new yeet sounds - Quack, Yeet, Wilhelm, Aztec, Glass and Chicken. Explore and have fun!
+  + Added six new yeet sounds - Quack, Yeet, Wilhelm, Aztec death whistle, Glass and Chicken.
   + Added chat controls: .yeetsound, .yeetvol, .yeetstrength, .yeetlock, .yeetpitch
   + Added `.yeet` to list all yeet commands, also reachable as `.yeethelp`
   + Added ConfigLib compatibility
   + Fixed shockwave rings spawning forever on an item that landed in water, which left a cloud of
     foam-like particles floating on the surface
-  + Fixed long throws freezing in mid air
+  + Fixed long throws freezing in mid air 
   + Fixed the yeet sound db setting
-
+  
 ### Server side changes
-
   + Added a Yeet! Server Settings section to the ConfigLib screen
   + Added a maximum throw strength that sets player max.
   + Added volume max
